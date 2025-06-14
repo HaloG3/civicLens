@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>civicLens - Upload Complaint Photo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container upload-page">
+    <div class="upload-header">
+      <button class="back-btn" id="backBtn"><i class="fas fa-arrow-left"></i></button>
+      <h2 id="uploadHeading">Upload Photo</h2>
+    </div>
+    <div class="upload-section">
+      <div class="camera-icon"><i class="fas fa-camera fa-3x"></i></div>
+      <label class="upload-btn">
+        <input type="file" accept="image/*" capture="environment" id="cameraInput" style="display:none;">
+        <span id="takePhotoBtn">Take a Photo</span>
+      </label>
+      <label class="upload-btn">
+        <input type="file" accept="image/*" id="galleryInput" style="display:none;">
+        <span id="uploadGalleryBtn">Upload from Gallery</span>
+      </label>
+      <div id="uploadedMsg" class="uploaded-msg" style="display:none;">Uploaded!</div>
+    </div>
+  </div>
+  <script src="complaint-upload.js"></script>
+</body>
+</html> 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swachh Bharat Mission - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container dashboard">
+    <div class="profile-card">
+      <div class="avatar"><i class="fas fa-user-circle"></i></div>
+      <div class="welcome">
+        <h2 id="welcomeMsg">Good Afternoon, Welcome Swachhata Citizen</h2>
+        <p id="todayAction">Here are today's action for you</p>
+      </div>
+    </div>
+    <div class="status-card">
+      <div class="status-info">
+        <div class="status-title" id="statusTitle">Overflow of Sewerage or Storm Water reported</div>
+        <div class="status-id" id="statusId">ID: W0210C28125506</div>
+        <div class="status-address" id="statusAddress"><i class="fas fa-location-dot"></i> <span id="addressText">Your Address Here</span></div>
+      </div>
+      <button class="view-status" id="viewStatusBtn">View Status</button>
+    </div>
+    <div class="address-section">
+      <label for="addressInput"><i class="fas fa-map-marker-alt"></i> Address</label>
+      <div class="address-input-row">
+        <input type="text" id="addressInput" value="Your Address Here" />
+        <button id="gpsBtn" title="Use GPS"><i class="fas fa-crosshairs"></i></button>
+      </div>
+    </div>
+    <div class="complaints-section">
+      <h3><i class="fas fa-history"></i> <span id="complaintsHeading">Previous Complaints</span></h3>
+      <ul class="complaints-list">
+        <li class="complaint-item">
+          <div class="complaint-title" id="complaint1Title">Overflow of Sewerage</div>
+          <div class="complaint-status" id="complaint1Status">In Progress</div>
+          <div class="complaint-progress"><div class="progress-bar" style="width: 60%"></div></div>
+        </li>
+        <li class="complaint-item">
+          <div class="complaint-title" id="complaint2Title">Garbage not collected</div>
+          <div class="complaint-status" id="complaint2Status">Resolved</div>
+          <div class="complaint-progress"><div class="progress-bar" style="width: 100%"></div></div>
+        </li>
+        <li class="complaint-item">
+          <div class="complaint-title" id="complaint3Title">Public Toilet Issue</div>
+          <div class="complaint-status" id="complaint3Status">Pending</div>
+          <div class="complaint-progress"><div class="progress-bar" style="width: 20%"></div></div>
+        </li>
+      </ul>
+    </div>
+    <div class="tiles-grid">
+      <a href="complaint-category.html" style="text-decoration:none;color:inherit;">
+        <div class="tile tile-complaint">
+          <div class="tile-icon"><i class="fas fa-comment-dots"></i></div>
+          <div class="tile-title" id="tileComplaintTitle">Post A Complaint</div>
+          <div class="tile-desc" id="tileComplaintDesc">We are committed to reciving your complaint</div>
+        </div>
+      </a>
+      <div class="tile tile-rate">
+        <div class="tile-icon"><i class="fas fa-restroom"></i></div>
+        <div class="tile-title" id="tileRateTitle">Rate Public Toilet</div>
+        <div class="tile-desc" id="tileRateDesc">Scan QR Code</div>
+      </div>
+      <div class="tile tile-locator">
+        <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="tile-title" id="tileLocatorTitle">SBM Toilet Locator</div>
+        <div class="tile-desc" id="tileLocatorDesc">Find the nearest toilet</div>
+      </div>
+      <a href="complaints.html" style="text-decoration:none;color:inherit;">
+        <div class="tile tile-allposts">
+          <div class="tile-icon"><i class="fas fa-search"></i></div>
+          <div class="tile-title" id="tileAllPostsTitle">All Posts</div>
+          <div class="tile-desc" id="tileAllPostsDesc">View and search all complaints</div>
+        </div>
+      </a>
+    </div>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item"><i class="fas fa-home"></i><span id="navHome">Home</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-calendar-alt"></i><span id="navEvents">Events</span></a>
+      <a href="#" class="nav-item nav-add"><i class="fas fa-plus"></i></a>
+      <a href="#" class="nav-item"><i class="fas fa-exclamation-circle"></i><span id="navComplaints">Complaints</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-user"></i><span id="navProfile">Profile</span></a>
+    </nav>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html> 

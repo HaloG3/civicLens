@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swachh Bharat Mission - Mobile Entry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="language-selector">
+      <label for="language">🌐 Choose Language:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="bn">বাংলা</option>
+        <option value="te">తెలుగు</option>
+        <option value="mr">मराठी</option>
+        <option value="ta">தமிழ்</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="ur">اردو</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="ml">മലയാളം</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+        <option value="or">ଓଡ଼ିଆ</option>
+        <option value="as">অসমীয়া</option>
+        <option value="ma">मैथिली</option>
+        <option value="sa">संस्कृतम्</option>
+        <option value="ks">کٲشُر</option>
+        <option value="sd">سنڌي</option>
+        <option value="doi">डोगरी</option>
+        <option value="mni">মৈতৈলোন</option>
+        <option value="bho">भोजपुरी</option>
+        <option value="ne">नेपाली</option>
+        <option value="san">संथाली</option>
+        <option value="kok">कोंकणी</option>
+        <option value="sindhi">सिन्धी</option>
+        <option value="dogri">डोगरी</option>
+        <option value="tulu">ತುಳು</option>
+      </select>
+    </div>
+    <div class="card">
+      <h2>Enter Mobile Number</h2>
+      <p class="privacy">These details are not shared with anyone.</p>
+      <input type="tel" id="mobile" maxlength="10" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+      <button id="nextBtn" disabled>Next</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
